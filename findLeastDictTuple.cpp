@@ -76,6 +76,7 @@ class Solution{
 				}
 				abc.push_back({aS[b],b,bcS[b]});
 			}
-			return *min_element(abc.begin(),abc.end());
+			vector<int> resVec = *min_element(abc.begin(),abc.end());
+			return res(resVec[0],resVec[1],resVec[2]);
 		}
 };
